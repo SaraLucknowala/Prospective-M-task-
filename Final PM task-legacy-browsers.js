@@ -75,8 +75,8 @@ psychoJS.start({
     // resources:
     {'name': 'Book1.xlsx', 'path': 'Book1.xlsx'},
     {'name': 'FINAL word list.xlsx', 'path': 'FINAL word list.xlsx'},
-    {'name': 'Instructions 1.jpg', 'path': 'Instructions 1.jpg'},
-    {'name': 'Instructions 2.jpg', 'path': 'Instructions 2.jpg'},
+    {'name': '1 instruction.png', 'path': '1 instruction.png'},
+    {'name': '2 instruction.png', 'path': '2 instruction.png'},
   ]
 });
 
@@ -143,12 +143,12 @@ async function experimentInit() {
   image = new visual.ImageStim({
     win : psychoJS.window,
     name : 'image', units : 'height', 
-    image : 'Instructions 1.jpg', mask : undefined,
+    image : '1 instruction.png', mask : undefined,
     anchor : 'center',
     ori : 0.0, 
     pos : [0, 0], 
     draggable: false,
-    size : [2, 1],
+    size : [1.5, 0.75],
     color : new util.Color([1,1,1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
     texRes : 128.0, interpolate : true, depth : 0.0 
@@ -160,12 +160,12 @@ async function experimentInit() {
   image_2 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'image_2', units : 'height', 
-    image : 'Instructions 2.jpg', mask : undefined,
+    image : '2 instruction.png', mask : undefined,
     anchor : 'center',
     ori : 0.0, 
     pos : [0, 0], 
     draggable: false,
-    size : [1.8, 1],
+    size : [1.5, 0.75],
     color : new util.Color([1,1,1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
     texRes : 128.0, interpolate : true, depth : 0.0 

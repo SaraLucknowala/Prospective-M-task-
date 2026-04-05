@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.0),
-    on April 05, 2026, at 20:02
+    on April 05, 2026, at 20:12
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -380,7 +380,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     text = visual.TextStim(win=win, name='text',
         text='Please enter your Name below',
         font='Arial',
-        units='norm', pos=(0, 0.4), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        units='norm', pos=(0, 0.4), draggable=False, height=0.1, wrapWidth=None, ori=0.0, 
         color=(0.2941, -0.6706, -0.6706), colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
@@ -401,7 +401,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=-1, autoLog=True,
     )
     text_3 = visual.TextStim(win=win, name='text_3',
-        text='After typing your name, click the spacebar to continue ',
+        text='After typing your first name, click enter to continue ',
         font='Arial',
         pos=(0, -0.4), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color=(0.2941, -0.6706, -0.6706), colorSpace='rgb', opacity=None, 

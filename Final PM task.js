@@ -162,7 +162,7 @@ async function experimentInit() {
     text: 'Please enter your Name below',
     font: 'Arial',
     units: 'norm', 
-    pos: [0, 0.4], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0.4], draggable: false, height: 0.1,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color((0.2941, -0.6706, -0.6706)),  opacity: undefined,
     depth: 0.0 
@@ -197,7 +197,7 @@ async function experimentInit() {
   text_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_3',
-    text: 'After typing your name, click the spacebar to continue ',
+    text: 'After typing your first name, click enter to continue ',
     font: 'Arial',
     units: undefined, 
     pos: [0, (- 0.4)], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,

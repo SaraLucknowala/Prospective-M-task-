@@ -92,7 +92,7 @@ async function updateInfo() {
   currentLoop = psychoJS.experiment;  // right now there are no loops
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '2025.1.1';
+  expInfo['psychopyVersion'] = '2026.1.0';
   expInfo['OS'] = window.navigator.platform;
 
 
@@ -466,7 +466,10 @@ function instruction_2RoutineEachFrame() {
     
     // if key_resp_7 is active this frame...
     if (key_resp_7.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_7.getKeys({keyList: 'space', waitRelease: false});
+      let theseKeys = key_resp_7.getKeys({
+        keyList: typeof 'space' === 'string' ? ['space'] : 'space', 
+        waitRelease: false
+      });
       _key_resp_7_allKeys = _key_resp_7_allKeys.concat(theseKeys);
       if (_key_resp_7_allKeys.length > 0) {
         key_resp_7.keys = _key_resp_7_allKeys[_key_resp_7_allKeys.length - 1].name;  // just the last key pressed
@@ -613,7 +616,10 @@ function instruction1RoutineEachFrame() {
     
     // if key_resp_2 is active this frame...
     if (key_resp_2.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_2.getKeys({keyList: 'space', waitRelease: false});
+      let theseKeys = key_resp_2.getKeys({
+        keyList: typeof 'space' === 'string' ? ['space'] : 'space', 
+        waitRelease: false
+      });
       _key_resp_2_allKeys = _key_resp_2_allKeys.concat(theseKeys);
       if (_key_resp_2_allKeys.length > 0) {
         key_resp_2.keys = _key_resp_2_allKeys[_key_resp_2_allKeys.length - 1].name;  // just the last key pressed
@@ -759,7 +765,10 @@ function instruction2RoutineEachFrame() {
     
     // if key_resp_3 is active this frame...
     if (key_resp_3.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_3.getKeys({keyList: 'space', waitRelease: false});
+      let theseKeys = key_resp_3.getKeys({
+        keyList: typeof 'space' === 'string' ? ['space'] : 'space', 
+        waitRelease: false
+      });
       _key_resp_3_allKeys = _key_resp_3_allKeys.concat(theseKeys);
       if (_key_resp_3_allKeys.length > 0) {
         key_resp_3.keys = _key_resp_3_allKeys[_key_resp_3_allKeys.length - 1].name;  // just the last key pressed
@@ -1120,7 +1129,10 @@ function trainingblockRoutineEachFrame() {
       
       // if key_resp_4 is active this frame...
       if (key_resp_4.status === PsychoJS.Status.STARTED) {
-        let theseKeys = key_resp_4.getKeys({keyList: ['left','right','space'], waitRelease: false});
+        let theseKeys = key_resp_4.getKeys({
+          keyList: typeof ['left','right','space'] === 'string' ? [['left','right','space']] : ['left','right','space'], 
+          waitRelease: false
+        });
         _key_resp_4_allKeys = _key_resp_4_allKeys.concat(theseKeys);
         if (_key_resp_4_allKeys.length > 0) {
           key_resp_4.keys = _key_resp_4_allKeys[_key_resp_4_allKeys.length - 1].name;  // just the last key pressed
@@ -1285,7 +1297,10 @@ function instructionRoutineEachFrame() {
       
       // if key_resp_6 is active this frame...
       if (key_resp_6.status === PsychoJS.Status.STARTED) {
-        let theseKeys = key_resp_6.getKeys({keyList: 'space', waitRelease: false});
+        let theseKeys = key_resp_6.getKeys({
+          keyList: typeof 'space' === 'string' ? ['space'] : 'space', 
+          waitRelease: false
+        });
         _key_resp_6_allKeys = _key_resp_6_allKeys.concat(theseKeys);
         if (_key_resp_6_allKeys.length > 0) {
           key_resp_6.keys = _key_resp_6_allKeys[_key_resp_6_allKeys.length - 1].name;  // just the last key pressed
@@ -1499,7 +1514,10 @@ function MainTrialRoutineEachFrame() {
       
       // if key_resp is active this frame...
       if (key_resp.status === PsychoJS.Status.STARTED) {
-        let theseKeys = key_resp.getKeys({keyList: ['left','right','space'], waitRelease: false});
+        let theseKeys = key_resp.getKeys({
+          keyList: typeof ['left','right','space'] === 'string' ? [['left','right','space']] : ['left','right','space'], 
+          waitRelease: false
+        });
         _key_resp_allKeys = _key_resp_allKeys.concat(theseKeys);
         if (_key_resp_allKeys.length > 0) {
           key_resp.keys = _key_resp_allKeys[_key_resp_allKeys.length - 1].name;  // just the last key pressed
@@ -1693,7 +1711,10 @@ function ThankyouRoutineEachFrame() {
       
       // if key_resp_5 is active this frame...
       if (key_resp_5.status === PsychoJS.Status.STARTED) {
-        let theseKeys = key_resp_5.getKeys({keyList: 'space', waitRelease: false});
+        let theseKeys = key_resp_5.getKeys({
+          keyList: typeof 'space' === 'string' ? ['space'] : 'space', 
+          waitRelease: false
+        });
         _key_resp_5_allKeys = _key_resp_5_allKeys.concat(theseKeys);
         if (_key_resp_5_allKeys.length > 0) {
           key_resp_5.keys = _key_resp_5_allKeys[_key_resp_5_allKeys.length - 1].name;  // just the last key pressed
